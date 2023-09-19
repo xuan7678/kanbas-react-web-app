@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Details</title>
+</head>
+<body>
+<table border="1" width="100%">
+    <tr>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Announcement</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </ul>
+        </td>
+        <td>
+            <h2>Course Details</h2><br/>
+            Image: <input type="file" id="myFile" name="filename"><br/>
+            Name: CS4550 <br/>
+            Course Code: CS4550<br/>
+            Blueprint Course: No<br/>
+            Course Template: <input type="checkbox" id="courseTemplate" name="courseTemplate"><label for="courseTemplate"> Enable course as course template</label><br/>
+            Time Zone: <select id="timezone" name="timezone" class="custom-select"><option value="America/New_York">America/New_York GMT-5:00</option></select><br/>
+            SS ID: CS4550 <br/>
+            Subaccount: CS Undergrad <br/>
+            Term: 202410_1 Fall 2023 Semester Full Term <br/>
+            Participation: <select><option>Term</option></select><br/>
+            Course participation is limited to term start and end dates. <br/>
+            Start<br/>
+            <input type="date" id="start" name="startDate"><br/>
+            End<br/>
+            <input type="date" id="end" name="endDate"><br/>
+            <input type="checkbox" id="rs1"><label for="rs1">Restrict students from viewing course before term start date</label><br/>
+            <input type="checkbox" id="rs2"><label for="rs2">Restrict students from viewing course after term end date</label><br/>
+            Default due date: <input type="date" id="dueDate" name="dueDate"><br/>
+            Language: <select><option>Not Set</option></select><br/>
+            this will allow override any user/system language preferences. This is only recommended for foreign language courses.<br/>
+            File Storage: 10000 megabytes<br/>
+            Large Course:  <input type="checkbox" id="rs3"><label for="rs3">Launch SpeedGrader Filtered by Student Group</label><br/>
+            Grading Schema: <input type="checkbox" id="rs4"><label for="rs4">Enable course grading scheme</label><br/>
+            License: <select><option>Private</option></select><br/>
+            Grading Schema: <input type="checkbox" id="rs5"><label for="rs5">Copyright and license information must be provided for files before they are published</label><br/>
+            Visibility: If you need to make your course public please contact your administrator/support.<br/>
+            <select><option>Course</option></select><br/>
+            <input type="checkbox" id="rs6"><label for="rs6">Include this course in the public course index</label><br/>
+            Format: <select><option>On-Campus</option></select><br/>
+            Mastery Paths: <input type="checkbox" id="rs7"><label for="rs7">Enable individual learning paths for students based on assessment</label><br/>
+            Description: <textarea></textarea><br/>
+            <button>Update Course Details</button>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html>
