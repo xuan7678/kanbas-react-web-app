@@ -1,0 +1,82 @@
+.breadcrumb {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: red;
+    border-left: 5px solid transparent;
+    white-space: nowrap;
+}
+
+ul li.selected a {
+    color: black;
+    border-left: 5px solid black;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.list-group {
+    margin: 0;
+    padding: 0;
+}
+
+.list-group-item-secondary {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.space-before {
+    margin-top: 20px;
+}
+
+.space-after {
+    margin-bottom: 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.checkmark {
+    color: green;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+

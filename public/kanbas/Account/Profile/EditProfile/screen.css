@@ -1,0 +1,243 @@
+
+table {
+    width: 100%;
+    background-color: black;
+}
+
+
+td {
+    width: 80px;
+    padding: 5px 10px;
+}
+
+
+ul li a {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+ul li:nth-child(1) a {
+    color: white;
+    background-color: red;
+}
+
+
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+    color: red;
+    background-color: white;
+}
+
+
+h2, h3 {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: white;
+    color: red;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    background-color: black;
+}
+
+ul li {
+    text-align: left;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: red;
+}
+
+
+ul li.selected a {
+    color: black;
+    border-left: 5px solid black;
+}
+
+
+ul li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+ul li {
+    margin-bottom: 15px;
+}
+
+
+ul li.selected {
+    padding-left: 15px;
+}
+
+
+ul li:nth-child(n+10) {
+    display: none;
+}
+
+
+/* Kanbas Navigation sidebar styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    background-color: black;
+}
+
+ul li {
+    text-align: left;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: red;
+    border-left: 5px solid transparent;
+    white-space: nowrap;
+}
+
+/* Selected link style */
+ul li.selected a {
+    color: black;
+    border-left: 5px solid black;
+}
+
+/* Remove underline from all links */
+ul li a {
+    text-decoration: none;
+}
+
+/* Left-align link text */
+ul li {
+    text-align: left;
+}
+
+/* Wrap links with long text */
+ul li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* Spacing between links */
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Left margin for selected links */
+ul li.selected {
+    padding-left: 20px;
+}
+
+/* Large account icon */
+.user-icon {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Account full name style */
+.user-fullname {
+    text-align: center;
+    color: white;
+}
+
+/* Contact, Biography, Links section headers */
+h3 {
+    color: black;
+}
+
+/* Contact, Biography, Links section paragraphs */
+p {
+    color: black;
+}
+
+/* Link style */
+a {
+    text-decoration: none;
+}
+
+/* Edit button style */
+.edit-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}
+
+/* Input field styles */
+input[type="text"], select, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Button group style */
+.button-group {
+    text-align: center;
+}
+
+/* Title and URL input field styles */
+.col {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+/* Add link button style */
+.add-link-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}
+
+/* Save and Cancel button styles */
+.save-button, .cancel-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    float: right;
+}
+
