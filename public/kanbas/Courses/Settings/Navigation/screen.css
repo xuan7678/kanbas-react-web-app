@@ -75,6 +75,9 @@ a{
 .menu2{
     display: none;
 }
+.nav-link{
+    color: #C33235;
+}
 .modal-body a{
     color: #C33235;
 }

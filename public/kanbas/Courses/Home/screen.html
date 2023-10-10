@@ -1,166 +1,286 @@
-<table border="1" width="100%">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Zoom Meetings</a></li>
-        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Panopto Video</a></li>
-        <li><a href="#">Discussion</a></li>
-        <li><a href="#">Announcement</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Rubrics</a></li>
-        <li><a href="#">Outcomes</a></li>
-        <li><a href="#">Collaborations</a></li>
-        <li><a href="#">Syllabus</a></li>
-        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <button>Collapse All</button>
-      <button>View Progress</button>
-      <select>
-        <option>Publish All</option>
-        <option>Publish all items and modules</option>
-        <option>UnPublish</option>
-      </select>
-      <button>+ Module</button>
-      <hr />
-      <ul>
-        <li>
-          Week 0
-          <ul>
-            <li>
-              LEARNING OBJECTIVES
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Introduction to the course website</li>
-                <li>Introduction to the course tools</li>
-                <li>Introduction to the course assignments</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Week 1
-          <ul>
-            <li>
-              LEARNING OBJECTIVES
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Introduction to the course website</li>
-                <li>Introduction to the course tools</li>
-                <li>Introduction to the course assignments</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Week 2
-          <ul>
-            <li>
-              LEARNING OBJECTIVES
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Introduction to the course website</li>
-                <li>Introduction to the course tools</li>
-                <li>Introduction to the course assignments</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Week 3
-          <ul>
-            <li>
-              LEARNING OBJECTIVES
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Introduction to the course website</li>
-                <li>Introduction to the course tools</li>
-                <li>Introduction to the course assignments</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Week 4
-          <ul>
-            <li>
-              LEARNING OBJECTIVES
-              <ul>
-                <li>Introduction to the course</li>
-                <li>Introduction to the course website</li>
-                <li>Introduction to the course tools</li>
-                <li>Introduction to the course assignments</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </td>
-    <td valign="top">
-      <h2>Course Status</h2>
-      <button>Unpublish</button>
-      <button>Published</button>
-      <li><a href="#">Import Existing Content</a></li>
-      <li><a href="#">Import from Commons</a></li>
-      <li><a href="#">Choose Home Page</a></li>
-      <li><a href="#">View Course Stream</a></li>
-      <li><a href="#">New Announcement</a></li>
-      <li><a href="#">New Analysis</a></li>
-      <li><a href="#">View Course Notification</a></li>
-      <h2>Coming Up</h2>
-      <a href="#">View Calendar</a>
-      <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-      <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-      <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-    </td>
-  </tr>
-</table>
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Page</title>
-  <link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./home.css" rel="stylesheet">
 </head>
 <body>
-<nav aria-label="breadcrumb" class="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">Course Name</li>
-    <li class="breadcrumb-item">Term</li>
-    <li class="breadcrumb-item">Section</li>
-    <li class="breadcrumb-item">></li>
-    <li class="breadcrumb-item active" aria-current="page">Home</li>
-  </ol>
-</nav>
+<table border="0" width="100%">
+    <tr>
+        <td rowspan="2" class="label-con" valign="top">
+            <ul>
+                <li><a href="#"><img src="/log.png" width="100%"/></a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                    <i class="fa fa-solid fa-user text-secondary"></i><br>Account</a></li>
+                <li><a href="/Kanbas/Dashboard/index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><br>Dashboard</a>
+                </li>
+                <li class="label_active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i><br>Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> <br>Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i> <br>Inbox</a></li>
+                <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i> <br>History</a></li>
+                <li><a href="#"><i class="fa fa-paint-brush red-icon"></i> <br>Studio</a></li>
+                <li><a href="#"><i class="fa fa-share-alt red-icon"></i> <br>Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle red-icon"></i> <br>Help</a></li>
+            </ul>
+        </td>
+        <td colspan="3" class="nav_lab" valign="top">
+            <nav aria-label="breadcrumb" class="p-3 border-bottom w-100 mb-2 menu1"
+                 style="overflow: hidden;--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb float-start d-flex align-items-center m-0">
+                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-solid fa-bars list_li"
+                                                               style="color: #C33235;font-size: 26px"></i> <span
+                            class="fs-4 m-2" style="color: #C33235">CS4550.12631.202410</span></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+            <div class="justify-content-between align-items-center p-3 menu2">
+                <div><i class="fa fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color: #fff;font-size: 26px;cursor: pointer;"></i></div>
+                <div style="text-align: center;">
+                  <div>CS4550.12631.202410</div>
+                  <div>Modules</div>
+                </div>
+                <div><i class="fa fa-solid fa-chevron-down" data-bs-toggle="modal" data-bs-target="#staticBackdropRight" style="cursor: pointer"></i></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" class="label-nav">
+            <ul>
+                <li class="nav_active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Announcement</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </ul>
+        </td>
+        <td valign="top" class="p-3">
+            <div class="d-flex justify-content-end align-items-center p-1">
+                <button class="btn btn-secondary btn-light mx-1 border">Collapse All</button>
+                <button class="btn btn-secondary btn-light mx-1 border">View Progress</button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary btn-light dropdown-toggle mx-1 border" type="button"
+                            id="dropdownMenuButtonLight"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Publish All
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                        <li><a class="dropdown-item active" href="#">Publish All</a></li>
+                        <li><a class="dropdown-item" href="#">Publish all items and modules</a></li>
+                        <li><a class="dropdown-item" href="#">UnPublish</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-danger me-1 border">+ Module</button>
+            </div>
+            <hr/>
+            <div class="tab_list">
+                <ul>
+                    <li>
+                        <div class="w-100 p-3 h4" style="background: #F5F5F5">Week 0</div>
+                        <ul>
+                            <li>
+                                <div class="p-2 h5">
+                                    LEARNING OBJECTIVES
+                                </div>
+                                <ul class="w-100">
+                                    <li class="p-2">Introduction to the course</li>
+                                    <li class="p-2">Introduction to the course website</li>
+                                    <li class="p-2">Introduction to the course tools</li>
+                                    <li class="p-2">Introduction to the course assignments</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-100 p-3 h4" style="background: #F5F5F5">Week 1</div>
+                        <ul>
+                            <li>
+                                <div class="p-2 h5">
+                                    LEARNING OBJECTIVES
+                                </div>
+                                <ul class="w-100">
+                                    <li class="p-2">Introduction to the course</li>
+                                    <li class="p-2">Introduction to the course website</li>
+                                    <li class="p-2">Introduction to the course tools</li>
+                                    <li class="p-2">Introduction to the course assignments</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-100 p-3 h4" style="background: #F5F5F5">Week 2</div>
+                        <ul class="w-100">
+                            <li>
+                                <div class="p-2 h5">
+                                    LEARNING OBJECTIVES
+                                </div>
+                                <ul class="w-100">
+                                    <li class="p-2">Introduction to the course</li>
+                                    <li class="p-2">Introduction to the course website</li>
+                                    <li class="p-2">Introduction to the course tools</li>
+                                    <li class="p-2">Introduction to the course assignments</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-100 p-3 h4" style="background: #F5F5F5">Week 3</div>
+                        <ul>
+                            <li>
+                                <div class="p-2 h5">
+                                    LEARNING OBJECTIVES
+                                </div>
+                                <ul class="w-100">
+                                    <li class="p-2">Introduction to the course</li>
+                                    <li class="p-2">Introduction to the course website</li>
+                                    <li class="p-2">Introduction to the course tools</li>
+                                    <li class="p-2">Introduction to the course assignments</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-100 p-3 h4" style="background: #F5F5F5">Week 4</div>
+                        <ul>
+                            <li>
+                                <div class="p-2 h5">
+                                    LEARNING OBJECTIVES
+                                </div>
+                                <ul class="w-100">
+                                    <li class="p-2">Introduction to the course</li>
+                                    <li class="p-2">Introduction to the course website</li>
+                                    <li class="p-2">Introduction to the course tools</li>
+                                    <li class="p-2">Introduction to the course assignments</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </td>
+        <td valign="top" class="pe-5 ps-5 pt-2 CourseStatus">
+            <h4>Course Status</h4>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-light" style="width: 48%">Unpublish</button>
+                <button class="btn btn-light" style="width: 48%;color: white;background: #9EC199;">Published</button>
+            </div>
+            <ul class="ul_li p-0 mt-3">
+                <li class="mt-2"><a href="#">
+                    <button class="pt-2 btn w-100 border bg-light">Import Existing Content</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pb-2 btn w-100 border bg-light">Import from Commons</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pt-2 btn w-100 border bg-light">Choose Home Page</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pb-2 btn w-100 border bg-light">View Course Stream</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pt-2 btn w-100 border bg-light">New Announcement</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pb-2 btn w-100 border bg-light">New Analysis</button>
+                </a></li>
+                <li class="mt-2"><a href="#">
+                    <button class="pt-2 btn w-100 border bg-light">View Course Notification</button>
+                </a></li>
+            </ul>
 
-<table border="1" width="100%">
-  <!-- Your HTML content here -->
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <h3>Coming Up</h3>
+                <a href="#" style="color:#C33235;">View Calendar</a>
+            </div>
+            <hr>
+            <ul>
+                <li><a href="#">
+                    <div class="mb-2 h4" style="color:#C33235;">Lecture</div>
+                    <span class="text-black-50">CS4550.12631.202410 Sep 7 at 11:45am</span></a></li>
+                <br>
+                <li><a href="#">
+                    <div class="mb-2 h4" style="color:#C33235;">Lecture</div>
+                    <span class="text-black-50">CS4550.12631.202410 Sep 11 at 11:45am</span></a></li>
+                <br>
+                <li><a href="#">
+                    <div class="mb-2 h4" style="color:#C33235;">CS5610 06 SP23 Lecture</div>
+                    <span class="text-black-50">Sep 11 at 6pm</span></a></li>
+            </ul>
+        </td>
+    </tr>
 </table>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body border-0">
+                <ul>
+                    <li class="label_active"><a href="../../Account/Profile/screen.html"><i class="fa fa-solid fa-user text-secondary"></i>Account</a></li>
+                    <li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                    <li class="lab_active"><a href="../CourseNavigation/index.html"><i class="fa fa-book"></i>
+                        Courses</a></li>
+                    <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a></li>
+                    <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
+                    <li><a href="#"><i class="fa fa-solid fa-desktop"></i> Studio</a></li>
+                    <li><a href="#"><i class="fa fa-solid fa-arrow-right"></i> Commons</a></li>
+                    <li><a href="#"><i class="fa fa-solid fa-question"></i> Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="staticBackdropRight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" style="width: 100%">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body border-0">
+                <ul>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussion</a></li>
+                    <li><a href="#">Announcement</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
