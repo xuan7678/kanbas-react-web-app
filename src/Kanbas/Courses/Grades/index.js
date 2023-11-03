@@ -1,37 +1,17 @@
 import db from "../../Database";
-import './index.css'
-import {useParams} from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 function Grades() {
-    const {courseId} = useParams();
+    const { courseId } = useParams();
     const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
     const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
     return (
-        <div className="p-3">
-            <h2 className="mb-3 pb-2">Grades</h2>
-            <div className="row mb-3">
-                <div className="col-6">
-                    <div className="h5">Students Names</div>
-                    <select className="form-select" aria-label="Default select example">
-                        <option selected>Search Students</option>
-                    </select>
-                </div>
-                <div className="col-6">
-                    <div className="h5">Assignment Names</div>
-                    <select className="form-select" aria-label="Default select example">
-                        <option selected>Search Assignment</option>
-                    </select>
-                </div>
-            </div>
-            <div className="btn btn-light border mb-3"><i className="fa fa-solid fa-filter"></i>Apply Filters</div>
+        <div>
+            <h1>Grades</h1>
             <div className="table-responsive">
-                <table className="table table-striped table-bordered">
+                <table className="table">
                     <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        {assignments.map((assignment) => (<th className="text-center">{assignment.title}</th>))}
-                    </tr>
-
+                    <th>Student Name</th>
+                    {assignments.map((assignment) => (<th>{assignment.title}</th>))}
                     </thead>
                     <tbody>
                     {enrollments.map((enrollment) => {
@@ -42,14 +22,11 @@ function Grades() {
                                 {assignments.map((assignment) => {
                                     const grade = db.grades.find(
                                         (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                                    return (<td className="text-center">{grade?.grade || ""}</td>);
-                                })}
+                                    return (<td>{grade?.grade || ""}</td>);})}
                             </tr>);
                     })}
-                    </tbody>
-                </table>
-            </div>
-        </div>);
+                    </tbody></table>
+            </div></div>);
 }
-
 export default Grades;
+
