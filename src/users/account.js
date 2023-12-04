@@ -60,7 +60,7 @@ function Account() {
                     <input value={account.lastName}
                            onChange={(e) => setAccount({ ...account,
                                lastName: e.target.value })}/>
-                    <input type='date' value={account.dob.substr(0, 10)}
+                    <input type='date' value={account.dob && account.dob.substr(0, 10)}
                            onChange={(e) => setAccount({ ...account,
                                dob: e.target.value })}/>
                     <input value={account.email}
